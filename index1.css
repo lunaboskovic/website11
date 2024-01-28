@@ -13,32 +13,58 @@
     background-image: 1600x550;
 }
 
-nav{
-   position: relative;
+
+nav {
+    background-color: #333;
+    overflow: hidden;
 }
 
-.nav-links ul li{
-    list-style: none;
+nav a {
+    float: left;
     display: block;
-    position: relative;
-    padding: 10px;
-    text-align: center;
-}
-
-.nav-links ul li a{
     color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    font-size: 20px;
-    width: auto;
 }
 
-.nav-links ul li a:hover{
-    color: aquamarine ;
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    nav a {
+        float: none;
+        width: 100%;
+    }
+
+    .menu-icon {
+        display: block;
+        text-align: right;
+        padding: 14px 16px;
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+    }
+
+    .menu-icon:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .responsive-menu {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
 }
 
 .naslov{
     color: aquamarine;
-    position: absolute;
+    position: absolute; 
     transform: translate(-50%,-50%);
     top: 50%;
     left:50%;
@@ -81,10 +107,6 @@ h2{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
 }
 
-/* .slike{
-    margin-top: 30px;
-    margin-bottom: 30px;
-} */
 
 .slike img {
     max-width: 100%;
@@ -150,3 +172,4 @@ input[type=submit]{
 input[type=submit]:hover {
     border: 1px solid gray;
 }
+
